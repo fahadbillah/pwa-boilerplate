@@ -4,32 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { RestrictedComponent } from './restricted.component';
 
-const restrictedRoutes: Routes = [
-  { path: '',  
-    component: RestrictedComponent,
-    // children: [
-    //   {
-    //     path: '',
-    //     component: CrisisListComponent,
-    //     children: [
-    //       {
-    //         path: ':id',
-    //         component: CrisisDetailComponent
-    //       },
-    //       {
-    //         path: '',
-    //         component: CrisisCenterHomeComponent
-    //       }
-    //     ]
-    //   }
-    // ]
-  },
+const childRoutes: Routes = [
   {
     path: 'dashboard',
     loadChildren: 'app/pages/restricted/dashboard/dashboard.module#DashboardModule'
   }
 ];
 
+const restrictedRoutes: Routes = [
+  { path: '',
+    component: RestrictedComponent,
+    children: childRoutes
+  },
+];
 
 @NgModule({
   imports: [

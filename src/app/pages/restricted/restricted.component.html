@@ -1,6 +1,25 @@
-<a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+<header>
+  <div class="menu-button" (click)="toggleDrawer()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+<Nav>
+  <div class="wrapper" [ngClass]="{'in': showDrawer}">
+    <div class="nav-header">
 
-<p>
-  restricted works!
-</p>
+    </div>
+    <div class="nav-body">
+      <ul>
+        <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li><a routerLink="/login" routerLinkActive="active">Logout</a></li>
+      </ul>
+    </div>
+    <div class="nav-footer"></div>
+  </div>
+  <div class="overlay" (click)="toggleDrawer()" [ngClass]="{'in': showDrawer}">
+    <div class="menu-exit">X</div>
+  </div>
+</Nav>
 <router-outlet></router-outlet>

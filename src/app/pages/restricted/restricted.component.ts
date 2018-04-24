@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestrictedComponent implements OnInit {
 
+  showDrawer = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleDrawer() {
+    this.showDrawer = !this.showDrawer;
+  }
 }
