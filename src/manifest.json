@@ -2,7 +2,7 @@
   "name": "DESTREZA Mobile",
   "short_name": "DESTREZA",
   "start_url": "./",
-  "theme_color": "#f7f719",
+  "theme_color": "#efd538",
   "background_color": "#FFFFFF",
   "display": "standalone",
   "description": "DESTREZA erp app",

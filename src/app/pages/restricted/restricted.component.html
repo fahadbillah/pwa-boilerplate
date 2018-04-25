@@ -6,14 +6,15 @@
   </div>
 </header>
 <Nav>
-  <div class="wrapper" [ngClass]="{'in': showDrawer}">
+  <div class="wrapper" [ngClass]="{'in': showDrawer && !pristineDrawer, 'out': !showDrawer && !pristineDrawer}">
     <div class="nav-header">
-
+      <img class="logo" src="assets/destreza-small-logo.png" alt="Destreza Logo">
     </div>
     <div class="nav-body">
       <ul>
-        <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
-        <li><a routerLink="/login" routerLinkActive="active">Logout</a></li>
+        <li (click)="toggleDrawer()"><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li (click)="toggleDrawer()"><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li (click)="toggleDrawer()"><a routerLink="/login" routerLinkActive="active">Logout</a></li>
       </ul>
     </div>
     <div class="nav-footer"></div>

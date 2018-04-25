@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestrictedComponent implements OnInit {
 
+  pristineDrawer = true;
   showDrawer = false;
 
   constructor() { }
@@ -15,6 +16,7 @@ export class RestrictedComponent implements OnInit {
   }
 
   toggleDrawer() {
+    this.pristineDrawer = false;
     this.showDrawer = !this.showDrawer;
   }
 }

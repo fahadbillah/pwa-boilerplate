@@ -1,7 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
+a {
+  color: #efd638;
+}
+
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+  background-color: #efd638;
+  border: 0.1rem solid #efd638;
+}
+
+input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus {
+  border-color: #efd638;
+}
+
+/* overriding milligram */
+
 header{
     height: 60px;
+    background: #efd538;
 }
 
 nav {
@@ -17,40 +33,47 @@ nav>div.wrapper {
   height: 100vh;
   background: #000000;
   z-index: 1001;
-  -webkit-animation: slide-out 0.3s backwards;
-  animation: slide-out 0.3s backwards;
 }
 
 nav>div.wrapper.in {
-    -webkit-animation: slide 0.3s forwards;
-    animation: slide 0.3s forwards;
+    -webkit-animation: slide-in 0.3s forwards;
+    animation: slide-in 0.3s forwards;
 }
 
-@-webkit-keyframes slide {
+nav>div.wrapper.out {
+  -webkit-animation: slide-out 0.3s forwards;
+  animation: slide-out 0.3s forwards;
+}
+
+@-webkit-keyframes slide-in {
   100% {
     left: 0;
   }
 }
 
-@keyframes slide {
+@keyframes slide-in {
   100% {
     left: 0;
   }
 }
 
 @-webkit-keyframes slide-out {
+  0% {
+    left: 0px;
+  }
   100% {
-      left: calc(-100% + 57px);
+    left: -354px;
   }
 }
 
 @keyframes slide-out {
+  0% {
+    left: 0px;
+  }
   100% {
-      left: calc(-100% + 57px);
+    left: -354px;
   }
 }
-
-
 
 nav > div.wrapper > div{
     padding: 0px 16px 0px 16px;
@@ -86,7 +109,7 @@ nav>div.overlay.in {
 .menu-button{
     position: fixed;
     top: 10px;
-    left: 10px;
+    left: 16px;
     height: 35px;
     widows: 35px;
 }
@@ -109,7 +132,19 @@ nav>div.overlay.in {
 
 .nav-header {
   height: 150px;
-  background: #f7f719;
+  background: #efd538;
+  position: relative;
+}
+
+.nav-header > .logo{
+  border-radius: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  margin: auto;
 }
 
 .nav-body {
@@ -124,3 +159,9 @@ nav>div.overlay.in {
     padding: 0;
 }
 
+.nav-body ul > li{
+  height: 57px;
+  margin: 0;
+  line-height: 2.3;
+  font-size: 25px;
+}
