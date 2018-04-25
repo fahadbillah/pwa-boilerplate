@@ -28,8 +28,8 @@ nav {
 
 nav>div.wrapper {
   position: fixed;
-  left: calc(-100% + 57px);
-  width: calc(100% - 57px);
+  left: -300px;
+  width: 300px;
   height: 100vh;
   background: #000000;
   z-index: 1001;
@@ -62,7 +62,7 @@ nav>div.wrapper.out {
     left: 0px;
   }
   100% {
-    left: -354px;
+    left: -300px;
   }
 }
 
@@ -71,7 +71,7 @@ nav>div.wrapper.out {
     left: 0px;
   }
   100% {
-    left: -354px;
+    left: -300px;
   }
 }
 
