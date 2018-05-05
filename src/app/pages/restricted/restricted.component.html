@@ -17,10 +17,16 @@
         <li (click)="toggleDrawer()"><a routerLink="/login" routerLinkActive="active">Logout</a></li>
       </ul>
     </div>
-    <div class="nav-footer"></div>
+    <div class="nav-footer">
+      <span>Version beta-1.0.0</span>
+      <br>
+      <span>© FAHADBILLAH 2018</span>
+    </div>
   </div>
   <div class="overlay" (click)="toggleDrawer()" [ngClass]="{'in': showDrawer}">
     <div class="menu-exit">X</div>
   </div>
 </Nav>
-<router-outlet></router-outlet>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
