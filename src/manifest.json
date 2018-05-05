@@ -1,11 +1,11 @@
 {
-  "name": "DESTREZA Mobile",
-  "short_name": "DESTREZA",
+  "name": "PWA Boilerplate",
+  "short_name": "PWAB",
   "start_url": "./",
   "theme_color": "#efd538",
   "background_color": "#FFFFFF",
   "display": "standalone",
-  "description": "DESTREZA erp app",
+  "description": "PWA Boilerplate",
   "icons": [
       {
           "src": "/assets/images/icons/icon-16x16.png",

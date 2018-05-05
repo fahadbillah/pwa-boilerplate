@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "max-mobile"
+    "name": "pwa-boilerplate"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/public",
       "assets": [
         "assets",
         "favicon.ico",

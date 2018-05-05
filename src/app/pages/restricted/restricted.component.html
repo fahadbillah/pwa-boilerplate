@@ -12,9 +12,18 @@
     </div>
     <div class="nav-body">
       <ul>
-        <li (click)="toggleDrawer()"><a routerLink="/" routerLinkActive="active">Home</a></li>
-        <li (click)="toggleDrawer()"><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
-        <li (click)="toggleDrawer()"><a routerLink="/login" routerLinkActive="active">Logout</a></li>
+        <a routerLink="/" routerLinkActive="active">
+          <li (click)="toggleDrawer()">Home</li>
+        </a>
+        <a routerLink="/dashboard" routerLinkActive="active">
+          <li (click)="toggleDrawer()">Dashboard</li>
+        </a>
+        <a routerLink="/login" routerLinkActive="active">
+          <li (click)="toggleDrawer()">Logout</li>
+        </a>
+        <a routerLink="/intro" routerLinkActive="active">
+          <li (click)="toggleDrawer()">Intro</li>
+        </a>
       </ul>
     </div>
     <div class="nav-footer">
