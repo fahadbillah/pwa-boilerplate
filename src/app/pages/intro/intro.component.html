@@ -1,3 +1,12 @@
-<p>
-  intro works!
-</p>
+<div>
+  <img src="{{introPics[introPicStep].img}}" alt="{{introPics[introPicStep].title}}">
+</div>
+<div class="intro-nav container">
+  <div>
+    <button *ngIf="introPicStep != 0" class="button button-outline float-left" (click)="stepChange('prev')">< prev</button>
+    <button *ngIf="introPicStep <= (introPics.length - 2)" class="button button-outline float-right" (click)="stepChange('next')">Next ></button>
+  </div>
+  <div class="row">
+    <a class="column button button-outline" routerLink="/login">Skip</a>
+  </div>
+</div>

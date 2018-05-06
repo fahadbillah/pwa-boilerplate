@@ -8,11 +8,16 @@ const childRoutes: Routes = [
   {
     path: 'dashboard',
     loadChildren: 'app/pages/restricted/dashboard/dashboard.module#DashboardModule'
-  }
+  },
+  {
+    path: 'report/profit-loss',
+    loadChildren: 'app/pages/restricted/report/profit-loss/profit-loss.module#ProfitLossModule'
+  },
 ];
 
 const restrictedRoutes: Routes = [
-  { path: '',
+  { 
+    path: '',
     component: RestrictedComponent,
     children: childRoutes
   },
