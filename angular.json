@@ -22,11 +22,14 @@
               "src/manifest.json"
             ],
             "styles": [
-              "node_modules/normalize.css/normalize.css",
-              "node_modules/milligram/dist/milligram.css",
+              "src/assets/metronic/vendors/base/vendors.bundle.css",
+              "src/assets/metronic/demo/default/base/style.bundle.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/metronic/vendors/base/vendors.bundle.js",
+              "src/assets/metronic/demo/default/base/scripts.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
