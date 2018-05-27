@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'app';
 
   constructor(private router: Router) {
-    // this.router.navigate(['intro']);
+    this.router.navigate(['login']);
   }
 
 }
