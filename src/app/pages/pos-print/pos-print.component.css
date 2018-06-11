@@ -1,0 +1,22 @@
+table {
+  font-size: 10px;
+}
+td:nth-child(1) {  
+  width: 5mm;
+}
+td:nth-child(2) {  
+  width: 60mm;
+}
+td:nth-child(3) {  
+  width: 5mm;
+}
+td:nth-child(4) {  
+  width: 10mm;
+  text-align: right;
+}
+
+@media print{
+  .print-hidden{
+    display: none;
+  }
+}
